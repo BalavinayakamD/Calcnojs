@@ -14,36 +14,34 @@
     <title>Calculator</title>
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <div class="calc">
         <form>
           <div class="display">
             <input type="number" readonly class="inp" /><br />
           </div>
-          <input type="button" value="C" />
-          <input type="button" value="%" />
-          <button type="button"><i class="fa-solid fa-delete-left"></i></button>
-          <input type="button" value="&divide;" /><br />
-          <input type="button" value="7" />
-          <input type="button" value="8" />
-          <input type="button" value="9" />
-          <input type="button" value="+" /><br />
-          <input type="button" value="4" />
-          <input type="button" value="5" />
-          <input type="button" value="6" />
-          <input type="button" value="-" /><br />
-          <input type="button" value="1" />
-          <input type="button" value="2" />
-          <input type="button" value="3" />
-          <input type="button" value="*" /><br />
-          <input type="button" value="()" />
-          <input type="button" value="0" />
-          <input type="button" value="." />
-          <input
-            type="button"
-            value="="
-            style="background-color: yellow"
-          /><br />
+          <input type="button" value="C" class="btn" />
+          <input type="button" value="%" class="btn" />
+          <button type="button" class="btn" id="bksp">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <input type="button" value="&divide;" class="btn" /><br />
+          <input type="button" value="7" class="btn" />
+          <input type="button" value="8" class="btn" />
+          <input type="button" value="9" class="btn" />
+          <input type="button" value="+" class="btn" /><br />
+          <input type="button" value="4" class="btn" />
+          <input type="button" value="5" class="btn" />
+          <input type="button" value="6" class="btn" />
+          <input type="button" value="-" class="btn" /><br />
+          <input type="button" value="1" class="btn" />
+          <input type="button" value="2" class="btn" />
+          <input type="button" value="3" class="btn" />
+          <input type="button" value="X" class="btn" /><br />
+          <input type="button" value="()" class="btn" />
+          <input type="button" value="0" class="btn" />
+          <input type="button" value="." class="btn" />
+          <input type="button" value="=" id="eq" class="btn"" /><br />
         </form>
       </div>
     </div>
