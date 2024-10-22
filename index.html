@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -17,31 +18,60 @@
     <div class="container">
       <div class="calc">
         <form>
-          <div class="display">
-            <input type="number" readonly class="inp" /><br />
-          </div>
-          <input type="button" value="C" class="btn" />
-          <input type="button" value="%" class="btn" />
-          <button type="button" class="btn" id="bksp">
+          <div class="display"><input type="text" class="inp" /><br /></div>
+          <input type="button" value="AC" class="btn" onclick="clr()" />
+          <input
+            type="button"
+            value="x&#8319;"
+            class="btn"
+            onclick="disp('**')"
+          />
+          <button type="button" class="btn" id="bksp" onclick="del()">
             <i class="fa-solid fa-delete-left"></i>
           </button>
-          <input type="button" value="&divide;" class="btn" /><br />
-          <input type="button" value="7" class="btn" />
-          <input type="button" value="8" class="btn" />
-          <input type="button" value="9" class="btn" />
-          <input type="button" value="+" class="btn" /><br />
-          <input type="button" value="4" class="btn" />
-          <input type="button" value="5" class="btn" />
-          <input type="button" value="6" class="btn" />
-          <input type="button" value="-" class="btn" /><br />
-          <input type="button" value="1" class="btn" />
-          <input type="button" value="2" class="btn" />
-          <input type="button" value="3" class="btn" />
-          <input type="button" value="X" class="btn" /><br />
-          <input type="button" value="()" class="btn" />
-          <input type="button" value="0" class="btn" />
-          <input type="button" value="." class="btn" />
-          <input type="button" value="=" id="eq" class="btn"" /><br />
+          <input
+            type="button"
+            value="&divide;"
+            class="btn"
+            onclick="disp('/')"
+          /><br />
+          <input type="button" value="7" class="btn" onclick="disp('7')" />
+          <input type="button" value="8" class="btn" onclick="disp('8')" />
+          <input type="button" value="9" class="btn" onclick="disp('9')" />
+          <input
+            type="button"
+            value="+"
+            class="btn"
+            onclick="disp('+')"
+          /><br />
+          <input type="button" value="4" class="btn" onclick="disp('4')" />
+          <input type="button" value="5" class="btn" onclick="disp('5')" />
+          <input type="button" value="6" class="btn" onclick="disp('6')" />
+          <input
+            type="button"
+            value="-"
+            class="btn"
+            onclick="disp('-')"
+          /><br />
+          <input type="button" value="1" class="btn" onclick="disp('1')" />
+          <input type="button" value="2" class="btn" onclick="disp('2')" />
+          <input type="button" value="3" class="btn" onclick="disp('3')" />
+          <input
+            type="button"
+            value="X"
+            class="btn"
+            onclick="disp('*')"
+          /><br />
+          <input type="button" value="." class="btn" onclick="disp('.')" />
+          <input type="button" value="0" class="btn" onclick="disp('0')" />
+          <input type="button" value="00" class="btn" onclick="disp('00')" />
+          <input
+            type="button"
+            value="="
+            id="eq"
+            class="btn"
+            onclick="opt()"
+          /><br />
         </form>
       </div>
     </div>
