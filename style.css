@@ -1,19 +1,18 @@
 body {
   background: url(res/emcc.jpg);
   background-size: cover;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .container {
   position: relative;
   border-width: 2px;
   border-style: solid;
-  margin-top: 10%;
-  margin-left: 36%;
-  width: 400px;
-  height: 500px;
   background-color: rgba(188, 207, 223, 0.54);
   background-size: cover;
-  align-content: center;
 }
 .inp {
   height: 40px;
